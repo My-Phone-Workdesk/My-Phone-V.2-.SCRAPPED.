@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="../../../Icons/fontawesome-pro/css/all.css">
+    <link rel="stylesheet" href="../../../Design/iMobile_Pay.css">
+    <link rel="Icon" type="Image/X-icon" href="https://play-lh.googleusercontent.com/Hc8vNA4SOZwg5HMnBiwJLMT3tLYll54D994uZG7GeJYBtMEa2zHk8hNywTJZqpwWTg" />
+
+
+    <script src="../../../Scripts/Apps/iMobile_Pay.js" type="module"></script>
+    <title>iMobile Pay</title>
+
+</head>
+
+<body>
+
+    <div id="container">
+    
+        <div class="orange-box"><h1>Welcome to iMobile Pay!</h1></div>
+
+        <div class="gray-box">
+
+            <div class="box-content">
+
+                <img class="icon-placeholder" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/ICICI_Bank_Logo.svg/2560px-ICICI_Bank_Logo.svg.png">
+
+                <p>I already have Savings Account/ Credit Card/ Loan with ICICI Bank/ recently opened an account through Button in Second Box.</p>
+
+                <button id="option-1" class="blue-button">I already have an Account</button>
+
+            </div>
+
+        </div>
+
+        <div class="gray-box">
+
+            <div class="box-content">
+
+                <img class="icon-placeholder" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/ICICI_Bank_Logo.svg/2560px-ICICI_Bank_Logo.svg.png">
+
+                <p>I do not have any relationship with ICICI Bank and want to apply for a new Account</p>
+
+                <button id="option-2" class="blue-button">I want to Open a New Account</button>
+
+            </div>
+
+        </div>
+
+        <div class="gray-box">
+
+            <div class="box-content">
+
+                <img class="icon-placeholder" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/ICICI_Bank_Logo.svg/2560px-ICICI_Bank_Logo.svg.png">
+
+                <p>I already have Savings Account of which i want to Change my Details </p>
+
+                <button id="option-3" class="blue-button">I want to Change my Details</button>
+
+            </div>
+            
+        </div>
+
+    </div>
+
+    <div id="SignInAndUpModal" class="modal">
+
+        <div class="modal-content">
+
+            <span class="close" id="closeModal">&times;</span>
+
+            <div id="signin" class="column">
+
+                <h2>Sign In</h2>
+
+                <input class="input" type="text" placeholder="Username">
+                <input class="input" type="password" placeholder="Password">
+
+                <br><br><br>
+
+                <button class="blue-button" id="signinbutton">Sign In</button>
+
+                <br><br><br><span></span><br><br>
+
+                <p>Don't have an account ? ‎‎ <a href="" id="switchTabSI">Sign Up</a></p>
+
+            </div>
+
+            <div id="signup" class="column">
+
+                <h2>Sign Up</h2>
+
+                <input class="input" type="text" placeholder="Name">
+                <input class="input" type="text" placeholder="Username">
+                <input class="input" type="password" placeholder="Password" autocomplete="off">
+                <input class="input" type="password" placeholder="Security Code" autocomplete="off">
+                <input class="input" type="text" placeholder="Mobile Number">
+
+                <br><br><br>
+
+                <button class="blue-button" id="signupbutton">Sign Up</button>
+
+                <br><br>
+
+                <p>Already have an account ? ‎‎ <a href="" id="switchTabSU">Sign In</a></p>
+
+            </div>
+
+        </div>
+        
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="../../../Icons/fontawesome-pro/css/all.css">
+		<link rel="stylesheet" href="../../../Design/PayTM_Account.css">
+		<link rel="Icon" type="Image/X-icon" href="https://play-lh.googleusercontent.com/6_Qan3RBgpJUj0C2ct4l0rKKVdiJgF6vy0ctfWyQ7aN0lBjs78M-1cQUONQSVeo2jfs" />
+		<script src="../../../Scripts/Apps/PayTM.js" type="module"></script>
+		<title>My Account</title>
+	</head>
+	<body>
+		<div class="main">
+			<div class="headerWrapper">
+				<div class="header">
+					<img src="./PayTM_Assets/BankLogo.svg" alt="paytm">
+					<div class="corp-retail-login-switch">Logout</div>
+				</div>
+			</div>
+			<div class="content">
+				<div class="content-left">
+					<div class="content-left__info">
+						<div class="content-left__header">Hello, {Account Name Here}</div>
+						<div>
+							<div class="content-left__item">
+								<div class="content-left__item-icon">
+									<img class="content-left__item-icon__img" src="./PayTM_Assets/debitcard.svg" alt="">
+								</div>
+								<div class="content-left__item-details">
+									<div class="content-left__item-title">Balance</div>
+									<div class="content-left__item-description">₹ 1,00,00,000</div>
+								</div>
+							</div>
+							<div class="content-left__item">
+								<div class="content-left__item-icon">
+									<img class="content-left__item-icon__img" src="./PayTM_Assets/debitcard.svg" alt="">
+								</div>
+								<div class="content-left__item-details">
+									<div class="content-left__item-title">Loan Info</div>
+									<div class="content-left__item-description">Amount: ₹ 1,00,00,000</div>
+									<div class="content-left__item-description">Interest: 100%</div>
+									<div class="content-left__item-description">Taken On: 1 Feb 2024 1:00:01 PM IST</div>
+									<div class="content-left__item-description">Paid: ₹ 0</div>
+									<div class="content-left__item-description">Left: ₹ 2,00,00,000</div>
+								</div>
+							</div>
+							<div class="content-left__item">
+								<div class="content-left__item-icon">
+									<img class="content-left__item-icon__img" src="./PayTM_Assets/fixeddeposit.svg" alt="">
+								</div>
+								<div class="content-left__item-details">
+									<div class="content-left__item-title">Current Bank Interest Rates</div>
+									<div class="content-left__item-description">Loan: 9%</div>
+									<div class="content-left__item-description">Investment: 7.8%</div>
+								</div>
+							</div>
+							<div class="content-left__item">
+								<div class="content-left__item-icon">
+									<img class="content-left__item-icon__img" src="./PayTM_Assets/fixeddeposit.svg" alt="">
+								</div>
+								<div class="content-left__item-details">
+									<div class="content-left__item-title">My Investment</div>
+									<div class="content-left__item-description">Rate: 1.8%</div>
+									<div class="content-left__item-description">Invested: ₹ 10</div>
+									<div class="content-left__item-description">Profit/Loss: ₹ -11</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="content-right">
+					<img src="./PayTM_Assets/BankLogo.svg" class="BankLogo">
+					<br>
+					<button class="content-left__button">
+						<div class="content-left__button-content">
+							<p class="content-left__button-txt">Pay</p>
+						</div>
+					</button>
+					<br>
+					<button class="content-left__button" id="MyBillsButton">
+						<div class="content-left__button-content">
+							<p class="content-left__button-txt">My Bills</p>
+						</div>
+					</button>
+					<br>
+					<button class="content-left__button">
+						<div class="content-left__button-content">
+							<p class="content-left__button-txt">Take A Loan</p>
+						</div>
+					</button>
+					<br>
+					<button class="content-left__button">
+						<div class="content-left__button-content">
+							<p class="content-left__button-txt">Flush My Money</p>
+						</div>
+					</button>
+				</div>
+			</div>
+			<div id="popup" class="popup">
+				<div class="popup-content">
+					<span class="close">&times;</span>
+					<h2>Bills</h2>
+					<div class="grid">
+						<div class="grid-container">
+							<div class="grid-item">
+							  <div class="icon"><i class="fa-duotone fa-bolt"></i></div>
+							  <h2>Electricity</h2>
+							</div>
+							<div class="grid-item">
+							  <div class="icon"><i class="fa-duotone fa-mobile-retro"></i></div>
+							  <h2>Mobile</h2>
+							</div>
+							<div class="grid-item">
+							  <div class="icon"><i class="fa-duotone fa-router"></i></div>
+							  <h2>Broadbrand</h2>
+							</div>
+							<div class="grid-item">
+							  <div class="icon"><i class="fa-duotone fa-bus"></i></div>
+							  <h2>Transport Fee</h2>
+							</div>
+							<div class="grid-item">
+							  <div class="icon"><i class="fa-duotone fa-gas-pump"></i></div>
+							  <h2>Gas</h2>
+							</div>
+							<div class="grid-item">
+							  <div class="icon"><i class="fa-duotone fa-tv-retro"></i></div>
+							  <h2>DTH</h2>
+							</div>
+							<div class="grid-item">
+							  <div class="icon"><i class="fa-duotone fa-school"></i></div>
+							  <h2>School Fees</h2>
+							</div>
+							<div class="grid-item">
+							  <div class="icon"><i class="fa-duotone fa-tank-water"></i></div>
+							  <h2>Water</h2>
+							</div>
+							<div class="grid-item">
+							  <div class="icon"><i class="fa-duotone fa-phone-rotary"></i></div>
+							  <h2>Landline</h2>
+							</div>
+							<div class="grid-item">
+							  <div class="icon"><i class="fa-duotone fa-gas-pump"></i></div>
+							  <h2>Petrol Pay</h2>
+							</div>
+							<div class="grid-item">
+							  <div class="icon"><i class="fa-duotone fa-house"></i></div>
+							  <h2>Rent Pay</h2>
+							</div>
+						  </div>
+					</div>
+				</div>
+			</div>
+			<div class="footerWrapper">
+				<div class="container">
+					<div class="footer">
+						<div class="footerMenu"></div>
+						<div class="copyrightText">© My Phone V.2 PayTM</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
