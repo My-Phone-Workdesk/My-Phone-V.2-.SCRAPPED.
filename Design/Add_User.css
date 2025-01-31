@@ -1,0 +1,47 @@
+@font-face {
+
+    font-family: 'main';
+    
+    src: url('Product_Sans_Regular.ttf') format('embedded-opentype'), /* Internet Explorer */
+         url('Product_Sans_Regular.ttf') format('woff2'),             /* Super Modern Browsers */
+         url('Product_Sans_Regular.ttf') format('woff'),              /* Pretty Modern Browsers */
+         url('Product_Sans_Regular.ttf') format('truetype'),          /* Safari, Android, iOS */
+         url('Product_Sans_Regular.ttf') format('svg');               /* Legacy iOS */
+    
+    }
+	
+* {
+    text-decoration: none;
+    font-family: 'main';
+}
+a {
+    font-size: 10rem;
+    color: red;
+    background-color: aqua;
+    text-decoration: none;
+    margin-left: 10rem;
+    position: absolute;
+    top: 20rem;
+}
+#Load_Back {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 10vh;
+    width: 100vw;
+    background-color: black;
+    display: flex;
+    align-items: center;
+}
+#Load_Line {
+    position: relative;
+    left: 2%;
+    height: 8vh;
+    width: 5vw;
+    animation: Load 3s ease 0s 5 normal none;
+    background-color: white;
+}
+@keyframes Load {
+    from {left: 2%;}
+    to {left: 100%;}
+}
